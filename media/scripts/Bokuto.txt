@@ -3,10 +3,10 @@ module BokutoMod
     item Bokuto
     {
         DisplayName = Wooden Sword (Bokuto),
-        Icon = Bokuto,               // Ensure 'Bokuto.png' exists in media/textures/
+        Icon = Bokuto,
         Weight = 2,
         MaxRange = 1.4,
-        WeaponSprite = Crowbar,      // Use custom sprite like 'BokutoSprite' if available
+        WeaponSprite = Crowbar,
         MinDamage = 0.5,
         MaxDamage = 1.5,
         BaseSpeed = 1.0,
@@ -23,14 +23,14 @@ module BokutoMod
         ConditionLowerChanceOneIn = 15,
         AttachmentType = Shovel,
     }
-    
+
     recipe Make Bokuto
     {
         Logs=1,
         Carpentry=3,
         keep Hammer,
         Result:Bokuto,
-        Time:150.0,                   // Adjust time for balance
+        Time:150.0,
         Sound:PZ_Hammering,
         Category:Carpentry,
         NeedToBeLearned=true,
@@ -39,10 +39,10 @@ module BokutoMod
     item BokutoCraftingBook
     {
         DisplayName = Book: Crafting a Wooden Sword (Bokuto),
-        Icon = Bokuto,           // Ensure 'Bokuto.png' exists in media/textures/
+        Icon = BookBokuto,
         Weight = 0.5,
         Type = Literature,
         TeachedRecipes = Make Bokuto,
-        Tooltip = Tooltip_Book,      // Ensure 'Tooltip_Book' exists in translations or base game
+        Tooltip = Tooltip_Book,
     }
 }
