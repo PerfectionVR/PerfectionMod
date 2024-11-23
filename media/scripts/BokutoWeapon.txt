@@ -1,0 +1,36 @@
+module BokutoMod
+{
+    item BokutoCraftingBook
+    {
+        DisplayName = Book: Crafting a Wooden Sword (Bokuto),
+        Icon = BookBokuto,
+        Weight = 0.5,
+        Type = Literature,
+        TeachedRecipes = Make Bokuto,
+        Tooltip = Tooltip_Book,
+    }
+
+    item Bokuto
+    {
+        DisplayName = Wooden Sword (Bokuto),
+        Icon = Bokuto,
+        Weight = 2,
+        MaxRange = 1.4,
+        WeaponSprite = Crowbar,
+        MinDamage = 0.5,
+        MaxDamage = 1.5,
+        BaseSpeed = 1.0,
+        KnockbackOnNoDeath = TRUE,
+        SwingSound = WoodenWeaponSwing,
+        CriticalChance = 20,
+        DoorDamage = 10,
+        TreeDamage = 5,
+        SwingAnim = Bat,
+        WeaponType = Blunt,
+        MinAngle = 0.6,
+        KnockdownMod = 1.0,
+        SplatNumber = 1,
+        ConditionLowerChanceOneIn = 15,
+        AttachmentType = Shovel,
+    }
+}
